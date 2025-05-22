@@ -95,8 +95,9 @@ Cp23_fecal_formatted$Features[Cp23_fecal_formatted$Features == "EpisodeNumber"] 
 Cp23_fecal_formatted$Features <- factor(Cp23_fecal_formatted$Features, 
                                         levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp23_fecal_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp23_fecal_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
@@ -146,8 +147,9 @@ Cp17_fecal_formatted$Features[Cp17_fecal_formatted$Features == "EpisodeNumber"] 
 Cp17_fecal_formatted$Features <- factor(Cp17_fecal_formatted$Features, 
                                         levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp17_fecal_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp17_fecal_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
@@ -199,8 +201,9 @@ Cp23IgG_plasma_formatted$Features[Cp23IgG_plasma_formatted$Features == "EpisodeN
 Cp23IgG_plasma_formatted$Features <- factor(Cp23IgG_plasma_formatted$Features, 
                                             levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp23IgG_plasma_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp23IgG_plasma_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
@@ -251,8 +254,9 @@ Cp23IgA_plasma_formatted$Features[Cp23IgA_plasma_formatted$Features == "EpisodeN
 Cp23IgA_plasma_formatted$Features <- factor(Cp23IgA_plasma_formatted$Features, 
                                             levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp23IgA_plasma_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp23IgA_plasma_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
@@ -302,8 +306,9 @@ Cp17IgG_plasma_formatted$Features[Cp17IgG_plasma_formatted$Features == "EpisodeN
 Cp17IgG_plasma_formatted$Features <- factor(Cp17IgG_plasma_formatted$Features, 
                                             levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp17IgG_plasma_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp17IgG_plasma_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
@@ -353,8 +358,9 @@ Cp17IgA_plasma_formatted$Features[Cp17IgA_plasma_formatted$Features == "EpisodeN
 Cp17IgA_plasma_formatted$Features <- factor(Cp17IgA_plasma_formatted$Features, 
                                             levels = c("Sex (Female)", "Income", "Drain (Present)", "HAZ Score", "Episode Number",  "Season (Monsoon)", "Age in Years"))
 
-ggplot(Cp17IgA_plasma_formatted, aes(x= Estimate, y = Features, color = Significant)) +
+ggplot(Cp17IgA_plasma_formatted, aes(x= Estimate, y = Features, color = Significant, shape = Significant)) +
   scale_color_manual(values = c("Yes" = "red", "No" = "black")) +
+  scale_shape_manual(values = c("Yes" = 0, "No" = 16)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
   geom_linerange(aes(xmax = `97.5 %`, xmin = `2.5 %`)) +
   geom_point(size = 4) +
