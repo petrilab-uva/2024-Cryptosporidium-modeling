@@ -15,10 +15,10 @@ All source code required for each analysis is included within the `src` director
 
 All data and source code included with this repository can be downloaded by cloning the git repository:
 ```
-git clone https://github.com/petrilab-uva/2024-CDI-vaccine.git
+git clone https://github.com/petrilab-uva/2024-Cryptosporidium-modeling.git
 
 ```
-Alternatively, you can download a [zip archive of this repository](https://github.com/petrilab-uva/2024-CDI-vaccine/archive/refs/heads/main.zip). 
+Alternatively, you can download a [zip archive of this repository](https://github.com/petrilab-uva/2024-Cryptosporidium-modeling/archive/refs/heads/main.zip). 
 
 
 ## Contact Information
